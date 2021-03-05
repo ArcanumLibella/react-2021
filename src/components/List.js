@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Contact from './Contact';
 
 export default class List extends Component {
@@ -35,7 +35,7 @@ export default class List extends Component {
 
   render() {
     return (
-      <>
+      <Fragment>
         {this.state.contacts.map(contact => (
           <Contact 
             key={contact.id}
@@ -45,7 +45,7 @@ export default class List extends Component {
             removeClick={() => this.remove(contact.id)} //Make an anonymous function if we want to pass parameters to the function
           />
         ))}
-      </>
+      </Fragment>
     )
   }
 }

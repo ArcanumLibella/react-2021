@@ -22,14 +22,14 @@ export default class Contact extends Component {
   render() {
     return (
       <div 
-        className="card-contact relative m-4 p-4 shadow-md bg-indigo-100 rounded"
+        className="relative m-4 p-4 shadow-md bg-indigo-100 rounded"
         >
         <FontAwesomeIcon 
           icon={faTimes} 
           className="absolute right-4 cursor-pointer"
           onClick={() => this.removeContact()}
         />
-        <h4 className="uppercase font-bold pb-2 mb-2 border-b-2 border-indigo-600">
+        <h4 className="uppercase font-bold pb-2 mb-2">
           {this.props.nom}
           <FontAwesomeIcon 
             icon={faSortDown} 
@@ -39,15 +39,15 @@ export default class Contact extends Component {
         </h4>
 
         {this.state.show ? (
-          <ul className="mb-4">
-            <li className="">
+          <ul>
+            <li className="mb-2">
               <span className="font-medium mr-2">
                 <FontAwesomeIcon icon={faPhone} className="mr-2"/>
                 Téléphone :
               </span>
               {this.props.tel}
             </li>
-            <li className="">
+            <li className="mb-2">
               <span className="font-medium mr-2">
                 <FontAwesomeIcon icon={faEnvelope}  className="mr-2"/>
                 Email : 

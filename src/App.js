@@ -2,6 +2,7 @@ import { Component } from 'react';
 
 import Header from './components/Header';
 import List from './components/List';
+import Intro from './components/Intro';
 
 class App extends Component {
 
@@ -11,6 +12,7 @@ class App extends Component {
         <Header />
 
         <div className="sm:container mx-auto">
+          <Intro />
           <List />
         </div>
 
