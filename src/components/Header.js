@@ -7,9 +7,15 @@ function Header() {
         <a href="/" className="md:text-xl text-white uppercase font-black">AppContacts</a>
 
         <ul className="flex text-white">
-          <li className="flex-auto mx-2 sm:mx-4">Accueil</li>
-          <li className="flex-auto mx-2 sm:mx-4">Item 2</li>
-          <li className="flex-auto mx-2 sm:mx-4">Item 3</li>
+          <li className="flex-auto cursor-pointer mx-2 sm:mx-4">
+            <a href="/">Accueil</a>
+          </li>
+          <li className="flex-auto cursor-pointer mx-2 sm:mx-4">
+            <a href="/">Lien 2</a>
+          </li>
+          <li className="flex-auto cursor-pointer mx-2 sm:mx-4">
+            <a href="/">Lien 3</a>
+          </li>
         </ul>
       </nav>
     </header>
