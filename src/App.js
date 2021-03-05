@@ -12,9 +12,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Titre nom={this.nom1}/>
-        <Titre nom={this.nom2}/>
-        <Titre nom={this.nom3}/>
+        <Titre nom={this.state.nom1}/>
+        <Titre nom={this.state.nom2}/>
+        <Titre nom={this.state.nom3}/>
       </div>
     );
   }
