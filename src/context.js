@@ -5,11 +5,11 @@ const Context = React.createContext()
 const reducer = (state, action) => {
     switch(action.type) {
         case 'REMOVE_CONTACT' :
-        return {
-            contacts: state.contacts.filter(contact =>
-                contact.id !== action.payload
-            )
-        }
+            return {
+                contacts: state.contacts.filter(
+                    contact => contact.id !== action.payload
+                )
+            }
         default:
             return state
     }
@@ -37,6 +37,7 @@ export class Provider extends Component {
             tel: '06 11 22 33 44'
           }
         ],
+        show: true,
         dispatch: action => {
             this.setState(state => reducer(state, action))
         }
