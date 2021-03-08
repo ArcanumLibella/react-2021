@@ -1,9 +1,10 @@
 import { Component } from 'react';
 import { Provider } from './context'
 
-import Header from './components/Header';
-import List from './components/List';
+import Header from './components/layout/Header';
+import List from './components/contact/List';
 import Intro from './components/Intro';
+import AddContact from './components/contact/AddContact';
 
 class App extends Component {
 
@@ -13,8 +14,9 @@ class App extends Component {
         <div className="App">
           <Header />
 
-          <div className="sm:container mx-auto">
+          <div className="container mx-auto max-w-screen-sm">
             <Intro />
+            <AddContact />
             <List />
           </div>
 

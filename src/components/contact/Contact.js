@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Consumer } from '../context'
+import { Consumer } from './../../context'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope, faSortDown, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -26,7 +26,7 @@ export default class Contact extends Component {
         {value => {
           return(
             <div 
-              className="relative m-4 p-4 shadow-md bg-indigo-100 rounded"
+              className="relative m-4 p-4 bg-indigo-100 rounded"
               >
               <FontAwesomeIcon 
                 icon={faTimes} 

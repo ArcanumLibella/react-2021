@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
   return (
-    <header className="p-4 mx-auto shadow-lg bg-indigo-600">
+    <header className="p-4 mx-auto shadow-md bg-indigo-600">
       <nav className="container mx-auto flex justify-between">
         <a href="/" className="md:text-xl text-white uppercase font-black">AppContacts</a>
 
