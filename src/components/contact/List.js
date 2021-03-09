@@ -5,6 +5,10 @@ import Contact from './Contact';
 
 export default class List extends Component {
 
+  componentDidMount() {
+    console.log("componentDidMount -> Le composant est bien assemblé")
+  }
+
   render() {
     return (
       <Consumer>

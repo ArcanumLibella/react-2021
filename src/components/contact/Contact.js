@@ -20,6 +20,10 @@ export default class Contact extends Component {
     })
   }
 
+  componentDidUpdate() {
+    console.log("componentDidUpdate -> Le composant s'est mis à jour")
+  }
+
   render() {
     return (
       <Consumer>
