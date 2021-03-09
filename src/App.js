@@ -18,8 +18,9 @@ class App extends Component {
 
             <div className="container mx-auto max-w-screen-sm">
               <Route exact path="/" component={Intro} />
-              <Route exact path="/list" component={AddContact} />
+              <Route exact path="/" component={List} />
               <Route exact path="/list" component={List} />
+              <Route exact path="/add" component={AddContact} />
             </div>
 
           </div>

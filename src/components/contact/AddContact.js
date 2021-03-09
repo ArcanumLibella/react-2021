@@ -32,6 +32,9 @@ export default class AddContact extends Component {
             email: "",
             tel: ""
         })
+
+        // TO REDIRECT ON REPERTORY AFTER SUBMIT
+        this.props.history.push('/')
     }
 
 

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { Consumer } from '../../context'
 
 import Contact from './Contact';
@@ -10,7 +10,9 @@ export default class List extends Component {
       <Consumer>
         {value => {
           return(
-            <Fragment>
+            <div className="mx-4">
+              <h2 className="mt-8 text-2xl font-bold">Mes contacts</h2>
+
               {value.contacts.map(contact => (
                 <Contact 
                   key={contact.id}
@@ -20,7 +22,7 @@ export default class List extends Component {
                   tel={contact.tel}
                 />
               ))}
-            </Fragment>
+            </div>
           )
         }}
       </Consumer>

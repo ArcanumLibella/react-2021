@@ -11,6 +11,9 @@ function Header() {
           <li className="flex-auto cursor-pointer mx-2 sm:mx-4">
             <Link to="/list">Répertoire</Link>
           </li>
+          <li className="flex-auto cursor-pointer mx-2 sm:mx-4">
+            <Link to="/add">Ajouter</Link>
+          </li>
         </ul>
       </nav>
     </header>

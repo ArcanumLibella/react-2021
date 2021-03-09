@@ -26,7 +26,7 @@ export default class Contact extends Component {
         {value => {
           return(
             <div 
-              className="relative m-4 p-4 bg-indigo-100 rounded"
+              className="relative my-4 p-4 bg-indigo-100 rounded"
               >
               <FontAwesomeIcon 
                 icon={faTimes} 
