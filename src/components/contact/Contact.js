@@ -7,7 +7,7 @@ import { faPhone, faEnvelope, faSortDown, faTimes } from '@fortawesome/free-soli
 
 export default class Contact extends Component {
   state = {
-    show: true
+    show: false
   }
 
   removeContact = (id, dispatch) => {
@@ -33,17 +33,17 @@ export default class Contact extends Component {
                 className="absolute right-4 cursor-pointer"
                 onClick={() => this.removeContact(this.props.id, value.dispatch)}
               />
-              <h4 className="uppercase font-bold pb-2 mb-2">
+              <h4 className="uppercase font-bold">
                 {this.props.nom}
                 <FontAwesomeIcon 
                   icon={faSortDown} 
-                  className="ml-2 cursor-pointer"
+                  className="ml-4 cursor-pointer"
                   onClick={() => this.showContact()}
                 />
               </h4>
 
               {this.state.show ? (
-                <ul>
+                <ul className="mt-2">
                   <li className="mb-2">
                     <span className="font-medium mr-2">
                       <FontAwesomeIcon icon={faPhone} className="mr-2"/>
