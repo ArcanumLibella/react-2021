@@ -1,17 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
     <header className="p-4 mx-auto shadow-md bg-indigo-600">
       <nav className="container mx-auto flex justify-between">
-        <a href="/" className="md:text-xl text-white uppercase font-black">AppContacts</a>
+        <Link to="/" className="md:text-xl text-white uppercase font-black">AppContacts</Link>
 
         <ul className="flex text-white">
           <li className="flex-auto cursor-pointer mx-2 sm:mx-4">
-            <a href="/">Accueil</a>
-          </li>
-          <li className="flex-auto cursor-pointer mx-2 sm:mx-4">
-            <a href="/">Lien 2</a>
+            <Link to="/list">Répertoire</Link>
           </li>
         </ul>
       </nav>
