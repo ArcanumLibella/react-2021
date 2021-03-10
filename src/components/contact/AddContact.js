@@ -34,7 +34,7 @@ export default class AddContact extends Component {
         })
 
         // TO REDIRECT ON REPERTORY AFTER SUBMIT
-        this.props.history.push('/')
+        this.props.history.push('/react-2021')
     }
 
 

@@ -19,13 +19,13 @@ class App extends Component {
 
             <div className="container mx-auto max-w-screen-sm">
               <Switch>
-                <Route exact path="/">
+                <Route exact path="/react-2021">
                   <Intro />
                   <List />
                 </Route>
-                <Route exact path="/" component={List} />
-                <Route exact path="/list" component={List} />
-                <Route exact path="/add" component={AddContact} />
+                <Route exact path="/react-2021" component={List} />
+                <Route exact path="/react-2021/list" component={List} />
+                <Route exact path="/react-2021/add" component={AddContact} />
                 <Route component={Error} />
               </Switch>
             </div>
