@@ -2,11 +2,13 @@
   "name": "react-2021",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://arcanumlibella.github.io/react-2021",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "gh-pages": "^2.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -15,6 +17,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "deploy": "craco build&&gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
